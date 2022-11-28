@@ -1,11 +1,7 @@
 {
-    "name": "rhkasper.rk-unity-toolkit.Editor.Tests",
+    "name": "EditorTests",
     "rootNamespace": "",
-    "references": [
-        "GUID:0acc523941302664db1f4e527237feb3",
-        "GUID:27619889b8ba8c24980f49ee34dbb44a",
-        "GUID:607ddcc11fa519b419fafc16da8ff8d4"
-    ],
+    "references": [],
     "includePlatforms": [
         "Editor"
     ],

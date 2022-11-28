@@ -1,10 +1,9 @@
 {
-    "name": "rhkasper.rk-unity-toolkit.Tests",
+    "name": "RuntimeTests",
     "rootNamespace": "",
     "references": [
         "UnityEngine.TestRunner",
-        "UnityEditor.TestRunner",
-        "rhkasper.rk-unity-toolkit"
+        "UnityEditor.TestRunner"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
