@@ -1,0 +1,18 @@
+{
+  "name": "com.rhkasper.rk-unity-toolkit",
+  "version": "0.0.1",
+  "displayName": "RK Unity Toolkit",
+  "description": "An open source library of extension methods and tools that make solving many common problems in Unity cleaner, faster, and easier.",
+  "unity": "2021.3",
+  "unityRelease": "14f1",
+  "documentationUrl": "https://example.com/",
+  "changelogUrl": "https://example.com/changelog.html",
+  "licensesUrl": "https://unlicense.org/",
+  "dependencies": {},
+  "keywords": [  ],
+  "author": {
+    "name": "Robert Kasper",
+    "email": "RobertHKasper@gmail.com",
+    "url": "RobertKasper.me"
+  }
+}
