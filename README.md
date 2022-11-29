@@ -6,7 +6,10 @@ The RK Unity Toolkit is an open source library of extension methods and tools th
 - Gizmo Drawing Tools - A collection of tools for drawing points and bounding boxes in Unity’s gizmos, making it easier to debug 3D math.
 
 ## How to use it
-To add the RK Unity Toolkit to a Unity project, go to the releases page (https://github.com/RHKasper/RKUnityToolkit/releases) and download the .unitypackage file from the latest release. Once the .unitypackage is downloaded, open your project and import it using the menu item "Assets/Import Package" or by dragging the .unitypackage file into the unity window.
+The easiest way to add the RK Unity Toolkit to a Unity project is with the Unity Package Manager's "Add package from git URL..." option and entering "https://github.com/RHKasper/com.rhkasper.rk-unity-toolkit.git" in the text field.
+
+![image](https://user-images.githubusercontent.com/98301621/204426785-c018e2a4-2df5-4a8a-be9a-95c9c7612893.png)
+
 
 ## Versioning
 Each number in a release version will represent changes of different magnitude:
