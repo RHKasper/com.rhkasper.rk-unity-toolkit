@@ -1,4 +1,4 @@
-# com.rhkasper.rk-unity-toolkit (RK Unity Toolkit)
+# RK Unity Toolkit (com.rhkasper.rk-unity-toolkit)
 
 The RK Unity Toolkit is an open source library of extension methods and tools that make solving many common problems in Unity cleaner, faster, and easier. Some highlights include:
 - Easing Functions - Unity implementations of all the functions described on easings.net. These are very useful for code-based animations and creating polished non-linear behaviors.
