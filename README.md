@@ -14,19 +14,19 @@ The easiest way to add the RK Unity Toolkit to a Unity project is with the Unity
 ## Versioning
 Each number in a release version will represent changes of different magnitude:
 
-- Major Version (v1.3.35 => v2.0.0): changes in the first number represent major changes to the toolkit that will very likely cause errors in existing usage. This will include:
+- Major Version (1.3.35 => 2.0.0): changes in the first number represent major changes to the toolkit that will very likely cause errors in existing usage. This will include:
    - Unity major version updates (2021.3.x => 2022.3.x)
    - Renaming methods
    - Deleting methods (I don't expect to do this often, but it could happen)
 
 
-- Medium Version (v1.3.35 => v1.4.0): changes in the second number represent moderate changes. These likely won't cause any errors in existing usage, but if they do, they will be easy to resolve using a modern IDE like Visual Studios or Rider. Examples:
+- Medium Version (1.3.35 => 1.4.0): changes in the second number represent moderate changes. These likely won't cause any errors in existing usage, but if they do, they will be easy to resolve using a modern IDE like Visual Studios or Rider. Examples:
    - Unity minor version updates (2021.3.12f1 => 2021.3.15f1)
    - Reorganization of extension methods and files
    - namespace changes
 
 
-- Minor Version (v1.3.35 => v1.3.36): changes in the third number represent minor changes and bug fixes. These will not cause errors in existing usage. Examples:
+- Minor Version (1.3.35 => 1.3.36): changes in the third number represent minor changes and bug fixes. These will not cause errors in existing usage. Examples:
    - Addition of new files or methods
    - Documentation updates
    - Bug fixes (hopefully these won't be needed very often)
