@@ -10,6 +10,8 @@ The RK Unity Toolkit is an open source library of extension methods and tools th
 ## How to use it
 The easiest way to add the RK Unity Toolkit to a Unity project is with the Unity Package Manager's "Add package from git URL..." option and entering "https://github.com/RHKasper/com.rhkasper.rk-unity-toolkit.git" in the text field.
 
+This package is also available on OpenUPM: https://openupm.com/packages/com.rhkasper.rk-unity-toolkit/
+
 ![image](https://user-images.githubusercontent.com/98301621/204426785-c018e2a4-2df5-4a8a-be9a-95c9c7612893.png)
 
 
