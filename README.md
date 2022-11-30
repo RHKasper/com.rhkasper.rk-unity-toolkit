@@ -1,3 +1,5 @@
+[![openupm](https://img.shields.io/npm/v/com.rhkasper.rk-unity-toolkit?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.rhkasper.rk-unity-toolkit/)
+
 # RK Unity Toolkit (com.rhkasper.rk-unity-toolkit)
 
 The RK Unity Toolkit is an open source library of extension methods and tools that make solving many common problems in Unity cleaner, faster, and easier. Some highlights include:
