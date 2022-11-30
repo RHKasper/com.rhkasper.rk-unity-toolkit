@@ -1,6 +1,9 @@
 [![openupm](https://img.shields.io/npm/v/com.rhkasper.rk-unity-toolkit?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.rhkasper.rk-unity-toolkit/)
 
-# RK Unity Toolkit (com.rhkasper.rk-unity-toolkit)
+
+![RK Unity Toolkit Logo Wide-min](https://user-images.githubusercontent.com/98301621/204843781-56d493d1-5060-493d-9ffe-ff4518a0c6a0.png)
+
+# Welcome to the RK Unity Toolkit
 
 The RK Unity Toolkit is an open source library of extension methods and tools that make solving many common problems in Unity cleaner, faster, and easier. Some highlights include:
 - Easing Functions - Unity implementations of all the functions described on easings.net. These are very useful for code-based animations and creating polished non-linear behaviors.
