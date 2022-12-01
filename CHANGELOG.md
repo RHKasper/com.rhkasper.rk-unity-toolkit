@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+### Updated
+- Added `Pure` attribute to methods within the toolkit that return a value without modifying the state of anything.
+
 ## [1.0.1] - 2022-11-30
 ### Updated
 - README file updated to include toolkit logo
@@ -55,3 +59,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Vector3IntAdjustments.cs: extensions for adjusting the values in a Vector3Int (Clamp, Min, Max, Abs, etc.)
   - Vector3IntComponents.cs: extensions for rearranging or removing the components in a Vector3Int (XOZ, YYZ, XYO, etc.)
   - Vector3IntEditComponents.cs: extensions for editing the component values of a Vector3Int (WithX, WithY, WithZ)
+
+
+[unreleased]: https://github.com/RHKasper/com.rhkasper.rk-unity-toolkit/compare/main...develop
+[1.0.1]: https://github.com/RHKasper/com.rhkasper.rk-unity-toolkit/releases/tag/1.0.1
+[1.0.0]: https://github.com/RHKasper/com.rhkasper.rk-unity-toolkit/releases/tag/1.0.0
