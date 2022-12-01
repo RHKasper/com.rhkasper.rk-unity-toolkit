@@ -1,3 +1,4 @@
+using System.Diagnostics.Contracts;
 using UnityEngine;
 
 namespace Vector3IntExtensions
@@ -10,152 +11,152 @@ namespace Vector3IntExtensions
 		/// <summary>
 		/// Returns a new Vector3Int with value (0, 0, v.x) 
 		/// </summary>
-		public static Vector3Int OOX(this Vector3Int v) => new Vector3Int(0, 0, v.x);
+		[Pure] public static Vector3Int OOX(this Vector3Int v) => new Vector3Int(0, 0, v.x);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (0, 0, v.y) 
 		/// </summary>
-		public static Vector3Int OOY(this Vector3Int v) => new Vector3Int(0, 0, v.y);
+		[Pure] public static Vector3Int OOY(this Vector3Int v) => new Vector3Int(0, 0, v.y);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (0, 0, v.z) 
 		/// </summary>
-		public static Vector3Int OOZ(this Vector3Int v) => new Vector3Int(0, 0, v.z);
+		[Pure] public static Vector3Int OOZ(this Vector3Int v) => new Vector3Int(0, 0, v.z);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (0, v.x, 0) 
 		/// </summary>
-		public static Vector3Int OXO(this Vector3Int v) => new Vector3Int(0, v.x, 0);
+		[Pure] public static Vector3Int OXO(this Vector3Int v) => new Vector3Int(0, v.x, 0);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (0, v.x, v.x) 
 		/// </summary>
-		public static Vector3Int OXX(this Vector3Int v) => new Vector3Int(0, v.x, v.x);
+		[Pure] public static Vector3Int OXX(this Vector3Int v) => new Vector3Int(0, v.x, v.x);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (0, v.x, v.y) 
 		/// </summary>
-		public static Vector3Int OXY(this Vector3Int v) => new Vector3Int(0, v.x, v.y);
+		[Pure] public static Vector3Int OXY(this Vector3Int v) => new Vector3Int(0, v.x, v.y);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (0, v.x, v.z) 
 		/// </summary>
-		public static Vector3Int OXZ(this Vector3Int v) => new Vector3Int(0, v.x, v.z);
+		[Pure] public static Vector3Int OXZ(this Vector3Int v) => new Vector3Int(0, v.x, v.z);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (0, v.y, 0) 
 		/// </summary>
-		public static Vector3Int OYO(this Vector3Int v) => new Vector3Int(0, v.y, 0);
+		[Pure] public static Vector3Int OYO(this Vector3Int v) => new Vector3Int(0, v.y, 0);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (0, v.y, v.x) 
 		/// </summary>
-		public static Vector3Int OYX(this Vector3Int v) => new Vector3Int(0, v.y, v.x);
+		[Pure] public static Vector3Int OYX(this Vector3Int v) => new Vector3Int(0, v.y, v.x);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (0, v.y, v.y) 
 		/// </summary>
-		public static Vector3Int OYY(this Vector3Int v) => new Vector3Int(0, v.y, v.y);
+		[Pure] public static Vector3Int OYY(this Vector3Int v) => new Vector3Int(0, v.y, v.y);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (0, v.y, v.z) 
 		/// </summary>
-		public static Vector3Int OYZ(this Vector3Int v) => new Vector3Int(0, v.y, v.z);
+		[Pure] public static Vector3Int OYZ(this Vector3Int v) => new Vector3Int(0, v.y, v.z);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (0, v.z, 0) 
 		/// </summary>
-		public static Vector3Int OZO(this Vector3Int v) => new Vector3Int(0, v.z, 0);
+		[Pure] public static Vector3Int OZO(this Vector3Int v) => new Vector3Int(0, v.z, 0);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (0, v.z, v.x) 
 		/// </summary>
-		public static Vector3Int OZX(this Vector3Int v) => new Vector3Int(0, v.z, v.x);
+		[Pure] public static Vector3Int OZX(this Vector3Int v) => new Vector3Int(0, v.z, v.x);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (0, v.z, v.y) 
 		/// </summary>
-		public static Vector3Int OZY(this Vector3Int v) => new Vector3Int(0, v.z, v.y);
+		[Pure] public static Vector3Int OZY(this Vector3Int v) => new Vector3Int(0, v.z, v.y);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (0, v.z, v.z) 
 		/// </summary>
-		public static Vector3Int OZZ(this Vector3Int v) => new Vector3Int(0, v.z, v.z);
+		[Pure] public static Vector3Int OZZ(this Vector3Int v) => new Vector3Int(0, v.z, v.z);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (v.x, 0, 0) 
 		/// </summary>
-		public static Vector3Int XOO(this Vector3Int v) => new Vector3Int(v.x, 0, 0);
+		[Pure] public static Vector3Int XOO(this Vector3Int v) => new Vector3Int(v.x, 0, 0);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (v.x, 0, v.x) 
 		/// </summary>
-		public static Vector3Int XOX(this Vector3Int v) => new Vector3Int(v.x, 0, v.x);
+		[Pure] public static Vector3Int XOX(this Vector3Int v) => new Vector3Int(v.x, 0, v.x);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (v.x, 0, v.y) 
 		/// </summary>
-		public static Vector3Int XOY(this Vector3Int v) => new Vector3Int(v.x, 0, v.y);
+		[Pure] public static Vector3Int XOY(this Vector3Int v) => new Vector3Int(v.x, 0, v.y);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (v.x, 0, v.z) 
 		/// </summary>
-		public static Vector3Int XOZ(this Vector3Int v) => new Vector3Int(v.x, 0, v.z);
+		[Pure] public static Vector3Int XOZ(this Vector3Int v) => new Vector3Int(v.x, 0, v.z);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (v.x, v.x, 0) 
 		/// </summary>
-		public static Vector3Int XXO(this Vector3Int v) => new Vector3Int(v.x, v.x, 0);
+		[Pure] public static Vector3Int XXO(this Vector3Int v) => new Vector3Int(v.x, v.x, 0);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (v.x, v.x, v.x) 
 		/// </summary>
-		public static Vector3Int XXX(this Vector3Int v) => new Vector3Int(v.x, v.x, v.x);
+		[Pure] public static Vector3Int XXX(this Vector3Int v) => new Vector3Int(v.x, v.x, v.x);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (v.x, v.x, v.y) 
 		/// </summary>
-		public static Vector3Int XXY(this Vector3Int v) => new Vector3Int(v.x, v.x, v.y);
+		[Pure] public static Vector3Int XXY(this Vector3Int v) => new Vector3Int(v.x, v.x, v.y);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (v.x, v.x, v.z) 
 		/// </summary>
-		public static Vector3Int XXZ(this Vector3Int v) => new Vector3Int(v.x, v.x, v.z);
+		[Pure] public static Vector3Int XXZ(this Vector3Int v) => new Vector3Int(v.x, v.x, v.z);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (v.x, v.y, 0) 
 		/// </summary>
-		public static Vector3Int XYO(this Vector3Int v) => new Vector3Int(v.x, v.y, 0);
+		[Pure] public static Vector3Int XYO(this Vector3Int v) => new Vector3Int(v.x, v.y, 0);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (v.x, v.y, v.x) 
 		/// </summary>
-		public static Vector3Int XYX(this Vector3Int v) => new Vector3Int(v.x, v.y, v.x);
+		[Pure] public static Vector3Int XYX(this Vector3Int v) => new Vector3Int(v.x, v.y, v.x);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (v.x, v.y, v.y) 
 		/// </summary>
-		public static Vector3Int XYY(this Vector3Int v) => new Vector3Int(v.x, v.y, v.y);
+		[Pure] public static Vector3Int XYY(this Vector3Int v) => new Vector3Int(v.x, v.y, v.y);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (v.x, v.z, 0) 
 		/// </summary>
-		public static Vector3Int XZO(this Vector3Int v) => new Vector3Int(v.x, v.z, 0);
+		[Pure] public static Vector3Int XZO(this Vector3Int v) => new Vector3Int(v.x, v.z, 0);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (v.x, v.z, v.x) 
 		/// </summary>
-		public static Vector3Int XZX(this Vector3Int v) => new Vector3Int(v.x, v.z, v.x);
+		[Pure] public static Vector3Int XZX(this Vector3Int v) => new Vector3Int(v.x, v.z, v.x);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (v.x, v.z, v.y) 
 		/// </summary>
-		public static Vector3Int XZY(this Vector3Int v) => new Vector3Int(v.x, v.z, v.y);
+		[Pure] public static Vector3Int XZY(this Vector3Int v) => new Vector3Int(v.x, v.z, v.y);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (v.x, v.z, v.z) 
 		/// </summary>
-		public static Vector3Int XZZ(this Vector3Int v) => new Vector3Int(v.x, v.z, v.z);
+		[Pure] public static Vector3Int XZZ(this Vector3Int v) => new Vector3Int(v.x, v.z, v.z);
 				
 		/// <summary>
 		/// Returns a new Vector3Int with value (v.y, 0, 0) 

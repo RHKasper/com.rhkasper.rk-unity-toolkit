@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.Contracts;
 
 namespace Easing
 {
@@ -7,12 +8,12 @@ namespace Easing
 	/// </summary>
 	public static class EasingUtil
 	{
-		public static float Ease(float start, float end, float portion, EasingType type = EasingType.Linear)
+		[Pure] public static float Ease(float start, float end, float portion, EasingType type = EasingType.Linear)
 		{
 			return start + (end - start) * CalculateEasedValue(portion, type);
 		}
 
-		private static float CalculateEasedValue(float initialValue, EasingType easingType)
+		[Pure] private static float CalculateEasedValue(float initialValue, EasingType easingType)
 		{
 			return easingType switch
 			{
