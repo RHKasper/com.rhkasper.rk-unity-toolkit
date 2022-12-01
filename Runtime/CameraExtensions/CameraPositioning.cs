@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics.Contracts;
 using UnityEngine;
 
 namespace CameraExtensions
@@ -9,7 +10,7 @@ namespace CameraExtensions
         /// Gets the distance <see cref="cam"/> must be from a sphere of a given <see cref="radius"/> to see it entirely
         /// O(1)
         /// </summary>
-        public static float GetDistanceToSeeSphere(this Camera cam, float radius)
+        [Pure] public static float GetDistanceToSeeSphere(this Camera cam, float radius)
         {
             // distance = radius / tan(fov/2)
             float fovVert = cam.fieldOfView;
@@ -25,7 +26,7 @@ namespace CameraExtensions
         /// Gets the distance <see cref="cam"/> must be from a world-space <see cref="bounds"/> to see it entirely.
         /// O(1)
         /// </summary>
-        public static float GetDistanceToSeeBounds(this Camera cam, Bounds bounds)
+        [Pure] public static float GetDistanceToSeeBounds(this Camera cam, Bounds bounds)
         {
             return cam.GetDistanceToSeeSphere(bounds.extents.magnitude);
         }
@@ -34,7 +35,7 @@ namespace CameraExtensions
         /// Gets the distance <see cref="cam"/> must be from a <see cref="meshRenderer"/> to see it entirely.
         /// O(n) with respect to the number of vertices in the mesh.
         /// </summary>
-        public static float GetDistanceToSeeMeshRenderer(this Camera cam, MeshFilter meshFilter, MeshRenderer meshRenderer, out Vector3 centerPoint)
+        [Pure] public static float GetDistanceToSeeMeshRenderer(this Camera cam, MeshFilter meshFilter, MeshRenderer meshRenderer, out Vector3 centerPoint)
         {
             Transform t = meshRenderer.transform;
             if (meshFilter.transform != t)

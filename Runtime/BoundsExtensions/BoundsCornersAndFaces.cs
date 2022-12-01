@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using UnityEngine;
 
 namespace BoundsExtensions
@@ -20,7 +21,7 @@ namespace BoundsExtensions
 		/// </list>
 		/// </summary>
 		/// <param name="bounds"> a bounding box in world space</param>
-		public static List<Vector3> GetBoundsCorners(this Bounds bounds)
+		[Pure] public static List<Vector3> GetBoundsCorners(this Bounds bounds)
 		{
 			Vector3 min = bounds.min;
 			Vector3 max = bounds.max;
@@ -54,7 +55,7 @@ namespace BoundsExtensions
 		/// </list>
 		/// </summary>
 		/// <param name="bounds"> a bounding box in world space</param>
-		public static List<Vector3> GetBoundsFaceCenters(this Bounds bounds)
+		[Pure] public static List<Vector3> GetBoundsFaceCenters(this Bounds bounds)
 		{
 			Vector3 center = bounds.center;
 			Vector3 extents = bounds.extents;
@@ -87,7 +88,7 @@ namespace BoundsExtensions
 		/// </summary>
 		/// <param name="localBounds"> a bounding box in local space</param>
 		/// <param name="localTo">The transform the bounds are local to. Defaults to null, representing world-space</param>
-		public static List<Vector3> GetLocalBoundsCorners(this Bounds localBounds, Transform localTo)
+		[Pure] public static List<Vector3> GetLocalBoundsCorners(this Bounds localBounds, Transform localTo)
 		{
 			Vector3 min = localBounds.min;
 			Vector3 max = localBounds.max;
@@ -123,7 +124,7 @@ namespace BoundsExtensions
 		/// </summary>
 		/// <param name="localBounds"> a bounding box in local space</param>
 		/// <param name="localTo">The transform the bounds are local to. Defaults to null, representing world-space</param>
-		public static List<Vector3> GetLocalBoundsFaceCenters(this Bounds localBounds, Transform localTo)
+		[Pure] public static List<Vector3> GetLocalBoundsFaceCenters(this Bounds localBounds, Transform localTo)
 		{
 			Matrix4x4 matrix = localTo ? localTo.localToWorldMatrix : Matrix4x4.identity;
 

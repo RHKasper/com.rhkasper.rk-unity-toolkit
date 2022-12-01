@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 
 namespace LINQExtensions
 {
@@ -10,7 +11,7 @@ namespace LINQExtensions
         /// <see cref="valueAssignmentFunction"/>. For example, this could find the player with the most health.
         /// </summary>
         /// <returns>the first element that evaluates to the greatest value with the <see cref="valueAssignmentFunction"/> </returns>
-        public static T Most<T>(this IEnumerable<T> collection, Func<T, double> valueAssignmentFunction)
+        [Pure] public static T Most<T>(this IEnumerable<T> collection, Func<T, double> valueAssignmentFunction)
         {
             T bestElement = default;
             double bestValue = default;
@@ -36,7 +37,7 @@ namespace LINQExtensions
         /// <see cref="valueAssignmentFunction"/>. For example, this could find the player with the least health.
         /// </summary>
         /// <returns>the first element that evaluates to the least value with the <see cref="valueAssignmentFunction"/> </returns>
-        public static T Least<T>(this IEnumerable<T> collection, Func<T, double> valueAssignmentFunction)
+        [Pure] public static T Least<T>(this IEnumerable<T> collection, Func<T, double> valueAssignmentFunction)
         {
             T bestElement = default;
             double bestValue = default;
