@@ -1,3 +1,5 @@
+
+[![changelog-badge]][changelog]
 [![openupm](https://img.shields.io/npm/v/com.rhkasper.rk-unity-toolkit?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.rhkasper.rk-unity-toolkit/)
 
 
@@ -43,3 +45,6 @@ The RK Unity Toolkit uses the Unlicense meaning it is totally free for anyone to
 
 ## Contact me
 Feel free to contact me using Discord (Robert#4580) or email (roberthkasper@gmail.com) if you have any questions, comments, or suggestions. Happy coding!
+
+[changelog]: ./CHANGELOG.md
+[changelog-badge]: https://img.shields.io/badge/changelog-RK%20Unity%20Toolit-orange
