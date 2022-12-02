@@ -4,10 +4,13 @@ using UnityEngine;
 
 namespace BoundsExtensions
 {
+	/// <summary>
+	/// Extensions for finding points on a bounding box including the corners and the center of each face
+	/// </summary>
 	public static class BoundsCornersAndFaces
 	{
 		/// <summary>
-		/// Finds the world-space positions of the <see cref="bounds"/>' eight corners.
+		/// Finds the world-space positions of a world axis aligned bounding box's eight corners.
 		/// Order:
 		/// <list type="bullet">
 			/// <item> 0: Left-Bottom-Back (-x, -y, -z) </item>
@@ -43,7 +46,7 @@ namespace BoundsExtensions
 		}
 
 		/// <summary>
-		/// Find world-space positions of the center of each of the <see cref="bounds"/>' six faces.
+		/// Find world-space position of the center of each face of a world axis aligned bounding box.
 		/// Order:
 		/// <list type="bullet">
 		/// <item> 0: Left		(-x, 0, 0) </item>
@@ -87,12 +90,12 @@ namespace BoundsExtensions
 		/// </list>
 		/// </summary>
 		/// <param name="localBounds"> a bounding box in local space</param>
-		/// <param name="localTo">The transform the bounds are local to. Defaults to null, representing world-space</param>
+		/// <param name="localTo">The transform the bounds are local to</param>
 		[Pure] public static List<Vector3> GetLocalBoundsCorners(this Bounds localBounds, Transform localTo)
 		{
 			Vector3 min = localBounds.min;
 			Vector3 max = localBounds.max;
-			Matrix4x4 matrix = localTo ? localTo.localToWorldMatrix : Matrix4x4.identity;
+			Matrix4x4 matrix = localTo.localToWorldMatrix;
 
 			return new List<Vector3>
 			{
@@ -123,10 +126,10 @@ namespace BoundsExtensions
 		/// </list>
 		/// </summary>
 		/// <param name="localBounds"> a bounding box in local space</param>
-		/// <param name="localTo">The transform the bounds are local to. Defaults to null, representing world-space</param>
+		/// <param name="localTo">The transform the bounds are local to</param>
 		[Pure] public static List<Vector3> GetLocalBoundsFaceCenters(this Bounds localBounds, Transform localTo)
 		{
-			Matrix4x4 matrix = localTo ? localTo.localToWorldMatrix : Matrix4x4.identity;
+			Matrix4x4 matrix = localTo.localToWorldMatrix;
 
 			Vector3 center = localBounds.center;
 			Vector3 extents = localBounds.extents;

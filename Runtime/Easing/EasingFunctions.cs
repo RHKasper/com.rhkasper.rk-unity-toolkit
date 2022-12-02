@@ -8,7 +8,6 @@ namespace Easing
 	/// </summary>
 	public static class EasingFunctions
 	{
-		
 		[Pure] public static float Linear(float x)
 		{
 			x = Mathf.Clamp01(x);

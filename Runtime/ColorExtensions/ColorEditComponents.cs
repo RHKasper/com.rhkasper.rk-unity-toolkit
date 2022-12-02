@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace ColorExtensions
 {
+	/// <summary>
+	/// Extensions for copying a color and replacing components on the copy
+	/// </summary>
 	public static class ColorEditComponents
 	{
 		/// <summary>

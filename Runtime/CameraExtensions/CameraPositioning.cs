@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace CameraExtensions
 {
+    /// <summary>
+    /// Extensions for positioning a camera to see an object.
+    /// </summary>
     public static class CameraPositioning
     {
         /// <summary>
