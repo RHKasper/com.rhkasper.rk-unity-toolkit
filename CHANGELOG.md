@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Updated
 - Added `Pure` attribute to methods within the toolkit that return a value without modifying the state of anything.
+- Added Changelog badge to README.md
 
 ## [1.0.1] - 2022-11-30
 ### Updated
