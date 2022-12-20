@@ -1,7 +1,6 @@
 using NUnit.Framework;
 using UnityEngine;
 using Vector2Extensions;
-using Vector3Extensions;
 
 namespace Tests.Editor.Vector2Extensions
 {
