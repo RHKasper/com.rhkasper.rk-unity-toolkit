@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Vector2IntMultiply: extensions for multiplying Vector2Ints together in a component-wise fashion
 - Vector3Multiply: extensions for multiplying Vector3s together in a component-wise fashion
 - Vector3IntMultiply: extensions for multiplying Vector3Ints together in a component-wise fashion
+- MathConstants: precalculated math constants for convenience and improved performance
 
 ## [1.0.2] - 2022-12-1
 ### Updated
