@@ -15,7 +15,5 @@ namespace MathExtensions
 		public static readonly float Sqrt3 = 1.73205080757f;
 		public static readonly float Sqrt2Over2 = 0.70710678118f;
 		public static readonly float Sqrt3Over2 = 0.86602540378f;
-
-
 	}
 }
