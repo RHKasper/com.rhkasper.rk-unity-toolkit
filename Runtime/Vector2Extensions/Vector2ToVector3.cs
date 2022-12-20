@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Vector2Extensions
 {
 	/// <summary>
-	/// This class includes a bunch of extension methods for Vector2 that allow you to convert to a Vector3 and rearrange or remove components.
+	/// This class includes a bunch of extension methods for Vector2 that allow you to convert to a Vector3 with components arranged however you like
 	/// </summary>
 	public static class Vector2ToVector3
 	{

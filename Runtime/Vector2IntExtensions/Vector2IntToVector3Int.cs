@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Vector2IntExtensions
 {
 	/// <summary>
-	/// This class includes a bunch of extension methods for Vector2Int that allow you to convert to a Vector3Int and rearrange or remove components.
+	/// This class includes a bunch of extension methods for Vector2Int that allow you to convert to a Vector3Int with components arranged however you like
 	/// </summary>
 	public static class Vector2IntToVector3Int
 	{
