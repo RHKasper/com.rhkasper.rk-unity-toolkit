@@ -1,5 +1,4 @@
-﻿using System.Diagnostics.Contracts;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using UnityEngine;
 using Vector3Extensions;
 
