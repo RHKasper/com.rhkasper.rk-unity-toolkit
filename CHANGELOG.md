@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] - 2022-12-20
+### Added
+- Vector2Multiply: extensions for multiplying Vector2s together in a component-wise fashion
+- Vector2IntMultiply: extensions for multiplying Vector2Ints together in a component-wise fashion
+- Vector3Multiply: extensions for multiplying Vector3s together in a component-wise fashion
+- Vector3IntMultiply: extensions for multiplying Vector3Ints together in a component-wise fashion
+
 ## [1.0.2] - 2022-12-1
 ### Updated
 - Added `Pure` attribute to methods within the toolkit that return a value without modifying the state of anything.
