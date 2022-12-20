@@ -7,10 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased] - 2022-12-20
 ### Added
-- Vector2Multiply: extensions for multiplying Vector2s together in a component-wise fashion
-- Vector2IntMultiply: extensions for multiplying Vector2Ints together in a component-wise fashion
-- Vector3Multiply: extensions for multiplying Vector3s together in a component-wise fashion
-- Vector3IntMultiply: extensions for multiplying Vector3Ints together in a component-wise fashion
+- Vector2 Extensions
+  - Vector2Multiply.cs: extensions for multiplying Vector2s together in a component-wise fashion
+  - Vector2ToVector3.cs: extensions for converting a Vector2 to a Vector3 with reorganized components
+- Vector2IntExtensions
+  - Vector2IntMultiply.cs: extensions for multiplying Vector2Ints together in a component-wise fashion
+  - Vector2IntToVector3Int.cs: extensions for converting a Vector2Int to a Vector3Int with reorganized components
+- Vector3Extensions
+  - Vector3Multiply.cs: extensions for multiplying Vector3s together in a component-wise fashion
+  - Vector3ToVector2.cs: extensions for converting a Vector3 to a Vector2 with reorganized components
+- Vector3IntExtensions:
+  - Vector3IntMultiply.cs: extensions for multiplying Vector3Ints together in a component-wise fashion
+  - Vector3IntToVector2Int.cs: extensions for converting a Vector3Int to a Vector2Int with reorganized components
 - MathConstants: precalculated math constants for convenience and improved performance
 
 ## [1.0.2] - 2022-12-1
@@ -73,6 +81,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 [unreleased]: https://github.com/RHKasper/com.rhkasper.rk-unity-toolkit/compare/main...develop
-[1.0.1]: https://github.com/RHKasper/com.rhkasper.rk-unity-toolkit/releases/tag/1.0.2
+[1.0.3]: https://github.com/RHKasper/com.rhkasper.rk-unity-toolkit/releases/tag/1.0.3
+[1.0.2]: https://github.com/RHKasper/com.rhkasper.rk-unity-toolkit/releases/tag/1.0.2
 [1.0.1]: https://github.com/RHKasper/com.rhkasper.rk-unity-toolkit/releases/tag/1.0.1
 [1.0.0]: https://github.com/RHKasper/com.rhkasper.rk-unity-toolkit/releases/tag/1.0.0
