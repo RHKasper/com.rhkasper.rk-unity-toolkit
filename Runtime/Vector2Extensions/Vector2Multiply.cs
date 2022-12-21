@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Diagnostics.Contracts;
+using UnityEngine;
 
 namespace Vector2Extensions
 {
@@ -7,11 +8,11 @@ namespace Vector2Extensions
 		/// <summary>
 		/// Returns the component-wise product of two Vector2 objects
 		/// </summary>
-		public static Vector2 Multiply(this Vector2 v1, Vector2 v2) => new Vector2(v1.x * v2.x, v1.y * v2.y);
+		[Pure] public static Vector2 Multiply(this Vector2 v1, Vector2 v2) => new Vector2(v1.x * v2.x, v1.y * v2.y);
 		
 		/// <summary>
 		/// Returns the component-wise product of a Vector2 and a Vector2Int
 		/// </summary>
-		public static Vector2 Multiply(this Vector2 v1, Vector2Int v2) => new Vector2(v1.x * v2.x, v1.y * v2.y);
+		[Pure] public static Vector2 Multiply(this Vector2 v1, Vector2Int v2) => new Vector2(v1.x * v2.x, v1.y * v2.y);
 	}
 }
