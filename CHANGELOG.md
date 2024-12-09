@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0] - 2024-12-08
+### Added
+- GenericListDisplay: UI Component for displaying a list of objects. Good for rapid UI prototyping/development.
+- UGuiTools: a set of useful editor tools for uGUI. See Third Party Notices.md for attribution info
+- WhiteSquare256.png: added a white square sprite
+### Updated
+- Fixed Easing Samples
+
 ## [1.0.3] - 2022-12-20
 ### Added
 - Vector2 Extensions
@@ -81,6 +89,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 [unreleased]: https://github.com/RHKasper/com.rhkasper.rk-unity-toolkit/compare/main...develop
+[2.0.0]: https://github.com/RHKasper/com.rhkasper.rk-unity-toolkit/releases/tag/2.0.0
 [1.0.3]: https://github.com/RHKasper/com.rhkasper.rk-unity-toolkit/releases/tag/1.0.3
 [1.0.2]: https://github.com/RHKasper/com.rhkasper.rk-unity-toolkit/releases/tag/1.0.2
 [1.0.1]: https://github.com/RHKasper/com.rhkasper.rk-unity-toolkit/releases/tag/1.0.1
