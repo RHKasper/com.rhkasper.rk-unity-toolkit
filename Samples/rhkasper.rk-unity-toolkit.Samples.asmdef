@@ -1,6 +1,6 @@
 {
     "name": "rhkasper.rk-unity-toolkit.Samples",
-    "rootNamespace": "",
+    "rootNamespace": "RKUnityToolkit.Samples",
     "references": [
         "GUID:6055be8ebefd69e48b49212b09b47b2f",
         "GUID:607ddcc11fa519b419fafc16da8ff8d4"

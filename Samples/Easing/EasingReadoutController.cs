@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Samples.Easing
+namespace RKUnityToolkit.Samples.Easing
 {
     public class EasingReadoutController : MonoBehaviour
     {
