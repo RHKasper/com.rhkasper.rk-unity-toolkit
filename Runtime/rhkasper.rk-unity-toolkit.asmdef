@@ -1,3 +1,14 @@
 {
-	"name": "rhkasper.rk-unity-toolkit"
+    "name": "rhkasper.rk-unity-toolkit",
+    "rootNamespace": "RKUnityToolkit",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

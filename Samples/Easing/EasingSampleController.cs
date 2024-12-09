@@ -2,7 +2,7 @@ using System;
 using Easing;
 using UnityEngine;
 
-namespace Samples.Easing
+namespace RKUnityToolkit.Samples.Easing
 {
     public class EasingSampleController : MonoBehaviour
     {
