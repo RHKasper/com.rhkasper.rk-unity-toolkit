@@ -25,7 +25,7 @@ namespace RKUnityToolkit.Samples.GenericListDisplaySamples
 
         private List<float> GenerateRandomListOfFloats()
         {
-            List<float> floats = new List<float>();
+            List<float> floats = new List<float>{1};
             for (int i = 0; i < 10; i++)
             {
                 floats.Add((float)rng.NextDouble());
