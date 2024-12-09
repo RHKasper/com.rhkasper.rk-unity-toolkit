@@ -10,20 +10,35 @@ namespace RKUnityToolkit.UIElements
         
         private Dictionary<object, ListItemControllerBase> _activeListItems = new();
         private Dictionary<ListItemControllerBase, Stack<ListItemControllerBase>> _pooledListItems = new();
+        private ListItemControllerBase _latestPrefab;
         
         public void DisplayList<TData>(List<TData> listToDisplay, ListItemController<TData> listItemPrefab)
         {
             HashSet<TData> hashSetToDisplay = listToDisplay.ToHashSet();
-
-            foreach (object key in _activeListItems.Keys.ToList())
+            
+            if (listItemPrefab == _latestPrefab)
             {
-                if(!(key is TData data && hashSetToDisplay.Contains(data)))
+                // pool all unneeded elements
+                foreach (object key in _activeListItems.Keys.ToList())
                 {
-                    Destroy(_activeListItems[key].gameObject);
+                    if(!(key is TData data && hashSetToDisplay.Contains(data)))
+                    {
+                        PoolListItem(listItemPrefab, (ListItemController<TData>)_activeListItems[key]);
+                        _activeListItems.Remove(key);
+                    }
+                }
+            }
+            else
+            {
+                // pool all active items
+                foreach (object key in _activeListItems.Keys.ToList())
+                {
+                    PoolListItem(_latestPrefab, _activeListItems[key]);
                     _activeListItems.Remove(key);
                 }
             }
-                
+             
+            // display items
             foreach (var data in listToDisplay)
             {
                 if (!_activeListItems.ContainsKey(data))
@@ -34,6 +49,8 @@ namespace RKUnityToolkit.UIElements
                     _activeListItems.Add(data, instance);
                 }
             }
+
+            _latestPrefab = listItemPrefab;
         }
 
         private ListItemController<TData> GetOrInstantiateListItemController<TData>(ListItemControllerBase listItemPrefab)
@@ -53,7 +70,7 @@ namespace RKUnityToolkit.UIElements
             return instance as ListItemController<TData>;
         }
 
-        private void PoolListItem<TData>(ListItemController<TData> prefab, ListItemController<TData> instance)
+        private void PoolListItem(ListItemControllerBase prefab, ListItemControllerBase instance)
         {
             instance.gameObject.SetActive(false);
             if (!_pooledListItems.ContainsKey(prefab))

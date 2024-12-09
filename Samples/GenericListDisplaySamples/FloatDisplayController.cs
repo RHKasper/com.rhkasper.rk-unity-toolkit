@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace RKUnityToolkit.Samples.GenericListDisplaySamples
 {
-    public class FloatListItemController : UIElements.GenericListDisplay.ListItemController<float>
+    public class FloatDisplayController : UIElements.GenericListDisplay.ListItemController<float>
     {
         [SerializeField] private Image fill;
         [SerializeField] private TextMeshProUGUI text;
