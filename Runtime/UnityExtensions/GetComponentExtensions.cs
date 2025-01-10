@@ -28,5 +28,15 @@ namespace RKUnityToolkit.UnityExtensions
 
             return foundComponents.ToArray();
         }
+
+        /// <summary>
+        /// Gets all components of type <see cref="T"/> on this object's children.
+        /// Does not recurse through children's children, etc.
+        /// Includes components on inactive GameObjects
+        /// </summary>
+        public static T[] GetComponentsInDirectChildren<T>(this Component component)
+        {
+            return GetComponentsInDirectChildren<T>(component.gameObject);
+        }
     }
 }
