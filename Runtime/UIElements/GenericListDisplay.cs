@@ -12,7 +12,7 @@ namespace RKUnityToolkit.UIElements
         private Dictionary<ListItemControllerBase, Stack<ListItemControllerBase>> _pooledListItems = new();
         private ListItemControllerBase _latestPrefab;
         
-        public void DisplayList<TData>(List<TData> listToDisplay, ListItemController<TData> listItemPrefab)
+        public void DisplayList<TData>(List<TData> listToDisplay, ListItemController<TData> listItemPrefab, object initData = null)
         {
             HashSet<TData> hashSetToDisplay = listToDisplay.ToHashSet();
             
@@ -43,7 +43,7 @@ namespace RKUnityToolkit.UIElements
             {
                 if (!_activeListItems.ContainsKey(data))
                 {
-                    var instance = GetOrInstantiateListItemController<TData>(listItemPrefab);
+                    var instance = GetOrInstantiateListItemController<TData>(listItemPrefab, initData);
                     instance.SetData(data);
                     instance.transform.SetAsLastSibling();
                     _activeListItems.Add(data, instance);
@@ -53,7 +53,10 @@ namespace RKUnityToolkit.UIElements
             _latestPrefab = listItemPrefab;
         }
 
-        private ListItemController<TData> GetOrInstantiateListItemController<TData>(ListItemControllerBase listItemPrefab)
+        public List<ListItemControllerBase> GetActiveListItems() => _activeListItems.Values.ToList();
+        public List<T> GetActiveListItems<T>() where T : ListItemControllerBase => _activeListItems.Values.OfType<T>().ToList();
+
+        private ListItemController<TData> GetOrInstantiateListItemController<TData>(ListItemControllerBase listItemPrefab, object initData)
         {
             ListItemControllerBase instance;
 
@@ -65,6 +68,7 @@ namespace RKUnityToolkit.UIElements
             else
             {
                 instance = Instantiate(listItemPrefab, listObjectsParent);
+                instance.Init(initData);
             }
 
             return instance as ListItemController<TData>;
@@ -89,13 +93,16 @@ namespace RKUnityToolkit.UIElements
                 Data = data;
                 OnDataSet(data);
             }
-
+            
             protected abstract void OnDataSet(TData data);
         }
 
         public class ListItemControllerBase : MonoBehaviour
         {
-            
+            public virtual void Init(object initData)
+            {
+                
+            }
         }
     }
 }
