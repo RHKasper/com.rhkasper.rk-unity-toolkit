@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.Contracts;
 using UnityEngine;
 
-namespace ColorExtensions
+namespace RKUnityToolkit.ColorExtensions
 {
 	/// <summary>
 	/// Extensions for copying a color and replacing components on the copy
@@ -27,5 +27,10 @@ namespace ColorExtensions
 		/// Returns a new color with the given <see cref="alpha"/> value and red, green, and blue values from <see cref="c"/>
 		/// </summary>
 		[Pure] public static Color WithAlpha(this Color c, float alpha) => new Color(c.r, c.g, c.b, alpha);
+		
+		/// <summary>
+		/// Returns the combined magnitude of the rgb components of <see cref="c"/>
+		/// </summary>
+		[Pure] public static float GetRGBMagnitude(this Color c) => Mathf.Sqrt(c.r * c.r + c.g * c.g + c.b * c.b);
 	}
 }
