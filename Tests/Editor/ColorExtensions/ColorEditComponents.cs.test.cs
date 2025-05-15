@@ -1,5 +1,5 @@
-using ColorExtensions;
 using NUnit.Framework;
+using RKUnityToolkit.ColorExtensions;
 using UnityEngine;
 
 namespace Tests.Editor.ColorExtensions
