@@ -1,7 +1,7 @@
-using ColorExtensions;
+using RKUnityToolkit.ColorExtensions;
 using UnityEngine.UI;
 
-namespace GraphicExtensions
+namespace RKUnityToolkit.GraphicExtensions
 {
 	public static class GraphicEditColorComponents
 	{

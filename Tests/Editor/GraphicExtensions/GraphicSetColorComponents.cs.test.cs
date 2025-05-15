@@ -1,5 +1,5 @@
-using GraphicExtensions;
 using NUnit.Framework;
+using RKUnityToolkit.GraphicExtensions;
 using UnityEngine;
 using UnityEngine.UI;
 using Object = UnityEngine.Object;

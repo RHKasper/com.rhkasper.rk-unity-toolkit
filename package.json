@@ -1,6 +1,6 @@
 {
   "name": "com.rhkasper.rk-unity-toolkit",
-  "version": "2.0.1",
+  "version": "2.1.1",
   "displayName": "RK Unity Toolkit",
   "description": "An open source library of extension methods and tools that make solving many common problems in Unity cleaner, faster, and easier.",
   "unity": "2020.3",
