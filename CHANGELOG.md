@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.0] - 2025-05-15
+### Added
+- ColorEditComponents.cs:
+  - Added GetRGBMagnitude extension method
+  - Changed namespace from ColorExtensions to RKUnityToolkit.ColorExtensions
+- GenericCoroutines.cs: DoNextFrame and DoAfterFrames
+- SoSingleton.cs: base class for scriptable object singletons stored in the resources folder
+- GenericListDisplay.cs:
+  - added initialization data that can be passed to all list items (i.e. a reference to some parent controller)
+  - added GetActiveListItems helper method
+- Various Vector Extension Methods: added the \[Pure\] attribute
+
 ## [2.0.1] - 2025-01-10
 ### Added
 - GetComponentExtensions: Added GetComponentsInDirectChildren methods
